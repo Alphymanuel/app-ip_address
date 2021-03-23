@@ -6,7 +6,7 @@
 */
 const IPCIDR = require('ip-cidr');
 const path = require('path');
-const { getIpv4MappedIpv6Address } = require(path.join(__dirname, 'ipv6.js'));
+const { getIpv4MappedIpv6Address } = require(path.join(__dirname, 'IPv6.js'));
 
 /**
  * Calculate and return the first host IP address from a CIDR subnet.
@@ -74,7 +74,7 @@ class IpAddress {
     // under Documentation -> Developer Guides -> Log Class Guide
     log.info('Starting the IpAddress product.');
   }
-   getFirstIpAddress(cidrStr, callback) {
+  getFirstIpAddress(cidrStr, callback) {
 
   // Initialize return arguments for callback
   let firstIpAddress = null;
